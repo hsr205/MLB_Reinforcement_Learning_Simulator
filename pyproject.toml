@@ -1,0 +1,21 @@
+[project]
+name = "mlb-reinforcement-learning-simulator"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Henry Rothenberg",email = "hsr205@aol.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic (>=2.13.4,<3.0.0)",
+    "pydantic-settings (>=2.15.0,<3.0.0)",
+    "playwright (>=1.62.0,<2.0.0)",
+    "logging (>=0.4.9.6,<0.5.0.0)",
+    "psycopg2-binary (>=2.9.12,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
