@@ -6,9 +6,7 @@ from psycopg2.pool import SimpleConnectionPool
 from src.config.config import Settings
 from src.logger.logger import AppLogger
 from src.utils.constants import Constants
-
-
-# from src.web_scraper.web_scraper import WebScraper
+from web_scrapper.web_scraper import WebScraper
 
 
 # TODO: Add a REDIS or in-memory cache for read operations if appropriate
@@ -109,7 +107,7 @@ class DatabaseClient:
         self._logger.info("=" * 100)
 
     async def insert_rows_into_player_table(self) -> None:
-        mlb_players_list: list[tuple] = await self._web_scraper.get_mlb_players_list()
+        mlb_players_list: list[tuple] = await self._web_scraper.get_all_mlb_players_list()
 
         conn: connection = self._get_connection()
         try:
