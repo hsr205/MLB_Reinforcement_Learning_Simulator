@@ -1,20 +1,20 @@
 import asyncio
 from logging import Logger
 
+from data_processor.data_processor import DataProcessor
 from src.config.config import Settings
-from src.database.database_client import DatabaseClient
 from src.logger.logger import AppLogger
 
 
 async def main() -> int:
     logger: Logger = AppLogger().get_logger(class_name=str(__name__))
-    settings: Settings = Settings()
+    # settings: Settings = Settings()
 
-    database_client: DatabaseClient = DatabaseClient(settings=settings)
+    database_processor:DataProcessor = DataProcessor()
 
     try:
 
-        await database_client.insert_rows_into_player_table()
+        database_processor.display_sample_statcast_data_retrieval()
 
         return 0
     except Exception as e:
