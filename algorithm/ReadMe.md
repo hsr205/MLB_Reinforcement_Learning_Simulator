@@ -8,3 +8,12 @@ dune-project - root config file, store meta data, dependencies & settings
 bin/ - main entriy point, has main.ml and a dune config file that tells the system to compile the binary
 lib/ - core logic, the juicy stuff
 test/ - you got this one
+
+
+
+To run this beauty
+
+
+1. Enter the algorithm folder (this folder)
+2. dune build
+3. dune exec bin/main.exe

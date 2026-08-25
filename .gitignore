@@ -8,6 +8,8 @@ __pycache__/
 
 # Directories
 
+*_build
+
 src/data/*
 
 # Distribution / packaging
