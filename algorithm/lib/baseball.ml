@@ -1,5 +1,5 @@
 
-(*You might say "hodge, these are contsants, they should be all caps"*)
+(*You might say "hodge, these are constants, they should be all caps"*)
 (*My response to that is, OCaml does not do constants, all variables are immutable by default*)
 (*If you reassign a variable, it is actually just a copy of a variable within scope*)
 (*Crazy right? and we are just getting started*)
