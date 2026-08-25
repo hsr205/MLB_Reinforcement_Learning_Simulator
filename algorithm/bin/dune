@@ -1,0 +1,4 @@
+(executable
+ (public_name algorithm)
+ (name main)
+ (libraries algorithm))
